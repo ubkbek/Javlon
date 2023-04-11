@@ -1,0 +1,313 @@
+/* inter-300 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/inter-v12-cyrillic_latin-300.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./fonts/inter-v12-cyrillic_latin-300.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/inter-v12-cyrillic_latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./fonts/inter-v12-cyrillic_latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/inter-v12-cyrillic_latin-500.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./fonts/inter-v12-cyrillic_latin-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/inter-v12-cyrillic_latin-600.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./fonts/inter-v12-cyrillic_latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/inter-v12-cyrillic_latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("./fonts/inter-v12-cyrillic_latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1105px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* header */
+
+.header__top {
+  background-color: #f13a3a;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0;
+}
+
+.header button {
+  color: #f13a3a;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  margin-left: 12px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__first-btn {
+  margin-left: 0;
+}
+
+/* header button */
+.header__bottom {
+  padding: 20px 0;
+}
+
+.header__bottom-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 487px;
+  width: 100%;
+}
+
+.header__bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__bottom-logo-link {
+  display: inline-block;
+}
+
+.header__bottom-progucts {
+  display: flex;
+  align-items: center;
+}
+
+.header__bottom-proguct {
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.header__bottom-proguct a {
+  text-decoration: none;
+  color: #f13a3a;
+}
+
+.header__bottom-proguct select {
+  border: none;
+  color: #f13a3a;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  outline: none;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.input-wrapper img {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  transform: translate(25px, 10px);
+}
+
+.header__button-input {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 327px;
+  width: 100%;
+  border: none;
+  background: #d9d9d9;
+  border-radius: 5px;
+  padding-left: 30px;
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__img {
+  border-radius: 10px;
+  max-width: 1280px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 21px;
+}
+
+.hero__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero__list3 {
+  justify-content: center;
+  /* align-items: ; */
+}
+
+.hero__item {
+  margin-bottom: 40px;
+  margin-right: 10px;
+}
+
+.hero__item:nth-child(5n) {
+  margin-right: 0;
+}
+
+.hero__item-wrapper {
+  border-radius: 5px;
+  background-color: #1b2947;
+  padding: 39px 28px;
+  margin-bottom: 15px;
+}
+
+.hero2__item-wrapper {
+  border-radius: 5px;
+  background-color: #7b94d5;
+  padding: 39px 28px;
+  margin-bottom: 15px;
+}
+
+.hero3__item-wrapper {
+  border-radius: 5px;
+  background-color: #e2b7b7;
+  padding: 39px 28px;
+  margin-bottom: 15px;
+}
+
+/* .hero___item3 {
+} */
+
+.hero__item-img {
+  max-width: 148px;
+  max-height: 145px;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__item-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b2947;
+  max-width: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  background-color: #f13a3a;
+  padding-bottom: 93px;
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.gallery {
+  background-color: #ccc;
+}
+
+.footer p {
+  margin-bottom: 24px;
+}
+
+.footer__left {
+  max-width: 428px;
+  width: 100%;
+}
+
+.footer__left img {
+  margin-right: 22px;
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+
+.link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #f13a3a;
+  text-decoration: none;
+}
